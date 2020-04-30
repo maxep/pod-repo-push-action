@@ -1,0 +1,17 @@
+name: 'CocoaPods Repo Push'
+description: 'Push podspec to private repo.'
+author: 'Maxime Epain'
+branding:
+    icon: 'chevrons-right'  
+    color: 'red'
+inputs:
+    repo-url:
+        description: 'Private repo source URL.'
+        required: true
+    args:
+        description: 'spec lint args, default: --allow-warnings'
+        required: false
+        default: '--allow-warnings'
+runs:
+    using: 'node12'
+    main: 'index.js'

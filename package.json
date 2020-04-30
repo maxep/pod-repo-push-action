@@ -1,0 +1,25 @@
+{
+  "name": "pod-repo-push-action",
+  "version": "0.1.0",
+  "description": "Push podspec to private repo.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxep/pod-repo-push-action.git"
+  },
+  "keywords": [
+    "cocoapods",
+    "deploy"
+  ],
+  "author": "Maxime Epain",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maxep/pod-repo-push-action/issues"
+  },
+  "homepage": "https://github.com/maxep/pod-repo-push-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.3",
+    "@actions/exec": "^1.0.3",
+    "@actions/github": "^2.1.1"
+  }
+}
