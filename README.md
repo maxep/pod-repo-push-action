@@ -1,6 +1,6 @@
 # Pod Repo Push Action
 
-Add your Podspec to your private repo on `tag` event.
+Add podspec to your private repo on `tag` event. The action will automatically update the podspec version based on the tag name using the [version_bump_podspec](https://docs.fastlane.tools/actions/version_bump_podspec/) action from Fastlane.
 
 ## Inputs
 
@@ -13,6 +13,11 @@ Add your Podspec to your private repo on `tag` event.
 **Optional** spec lint args, default: `--allow-warnings`
 
 ## Example usage
+
+Like in the following example, you can set the `username` and `password` URL values to your __Github Username__ and __Personal Access Token__ to be able to push to another repo.
+
+You can also use another action to setup ssh on the build machine, like [webfactory/ssh-agent}(https://github.com/webfactory/ssh-agent).
+
 ```yml
 - name: Run tests
       run: swift test --enable-code-coverage
@@ -20,7 +25,7 @@ Add your Podspec to your private repo on `tag` event.
 - name: pod repo push
     uses: maxep/pod-repo-push-action@0.1.0
     with:
-        repo-url: https://maxep:${{secrets.ACCESS_TOKEN}}@github.com/maxep/cocoapods-specs.git 
+        repo-url: https://maxep:${{ secrets.ACCESS_TOKEN }}@github.com/maxep/cocoapods-specs.git 
 ```
 
 ## Acknowledgements
