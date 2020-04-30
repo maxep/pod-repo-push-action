@@ -1,7 +1,6 @@
 const core = require('@actions/core')
 const github = require('@actions/github')
 const exec = require('@actions/exec')
-const URI = require('urijs')
 const fs = require('fs')
 const path = require('path')
 
