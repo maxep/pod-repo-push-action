@@ -1,6 +1,6 @@
 {
   "name": "pod-repo-push-action",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Push podspec to private repo.",
   "main": "index.js",
   "repository": {
