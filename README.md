@@ -16,7 +16,7 @@ Add podspec to your private repo on `tag` event. The action will automatically u
 
 Like in the following example, you can set the `username` and `password` URL values to your __Github Username__ and __Personal Access Token__ to be able to push to another repo.
 
-You can also use another action to setup ssh on the build machine, like [webfactory/ssh-agent}(https://github.com/webfactory/ssh-agent).
+You can also use another action to setup ssh on the build machine, like [webfactory/ssh-agent](https://github.com/webfactory/ssh-agent).
 
 ```yml
 - name: Run tests
