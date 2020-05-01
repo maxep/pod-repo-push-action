@@ -8,7 +8,7 @@ Add podspec to your private repo on `tag` event. The action will automatically u
 
 **Required** Specify your podspec private repo source URL.
 
-### `lint-args`
+### `args`
 
 **Optional** spec lint args.
 
