@@ -9,9 +9,9 @@ inputs:
         description: 'Private repo source URL.'
         required: true
     args:
-        description: 'spec lint args, default: --allow-warnings'
+        description: 'spec lint args'
         required: false
-        default: '--allow-warnings'
+        default: ''
 runs:
     using: 'node12'
     main: 'index.js'

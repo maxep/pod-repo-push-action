@@ -10,7 +10,7 @@ Add podspec to your private repo on `tag` event. The action will automatically u
 
 ### `lint-args`
 
-**Optional** spec lint args, default: `--allow-warnings`
+**Optional** spec lint args.
 
 ## Example usage
 
@@ -19,9 +19,6 @@ Like in the following example, you can set the `username` and `password` URL val
 You can also use another action to setup ssh on the build machine, like [webfactory/ssh-agent](https://github.com/webfactory/ssh-agent).
 
 ```yml
-- name: Run tests
-      run: swift test --enable-code-coverage
-
 - name: pod repo push
     uses: maxep/pod-repo-push-action@0.1.0
     with:
