@@ -20,7 +20,7 @@ You can also use another action to setup ssh on the build machine, like [webfact
 
 ```yml
 - name: pod repo push
-    uses: maxep/pod-repo-push-action@0.1.0
+    uses: maxep/pod-repo-push-action@0.1.2
     with:
         repo-url: https://maxep:${{ secrets.ACCESS_TOKEN }}@github.com/maxep/cocoapods-specs.git 
 ```
